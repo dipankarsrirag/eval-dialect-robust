@@ -1,0 +1,210 @@
+{"target_word":"Salad","restricted_words":["Greens","Dressing","Healthy","Vegetables","Tossed"]}
+{"target_word":"Pizza","restricted_words":["Cheese","Tomato","Sauce","Crust","Topping"]}
+{"target_word":"Burger","restricted_words":["Beef","Patty","Bun","Cheese","Lettuce"]}
+{"target_word":"Sushi","restricted_words":["Rice","Fish","Seaweed","Roll","Japanese"]}
+{"target_word":"Pasta","restricted_words":["Spaghetti","Sauce","Italian","Noodles","Alfredo"]}
+{"target_word":"Soup","restricted_words":["Broth","Bowl","Spoon","Hot","Vegetables"]}
+{"target_word":"Sandwich","restricted_words":["Bread","Ham","Cheese","Lettuce","Mayonnaise"]}
+{"target_word":"Cake","restricted_words":["Birthday","Frosting","Bake","Layer","Dessert"]}
+{"target_word":"Chocolate","restricted_words":["Sweet","Cocoa","Bar","Milk","Dark"]}
+{"target_word":"Coffee","restricted_words":["Caffeine","Bean","Brew","Cup","Espresso"]}
+{"target_word":"Tea","restricted_words":["Brew","Leaf","Hot","Cup","Herbal"]}
+{"target_word":"Ice Cream","restricted_words":["Cold","Scoop","Cone","Vanilla","Dessert"]}
+{"target_word":"Taco","restricted_words":["Mexican","Tortilla","Meat","Cheese","Salsa"]}
+{"target_word":"Fries","restricted_words":["Potato","Salt","Ketchup","Crispy","Fast Food"]}
+{"target_word":"Curry","restricted_words":["Spices","Rice","Indian","Sauce","Coconut"]}
+{"target_word":"Director","restricted_words":["Film","Movie","Maker","Leader","Cinema"]}
+{"target_word":"Screenplay","restricted_words":["Script","Writer","Movie","Plot","Story"]}
+{"target_word":"Cinematography","restricted_words":["Camera","Film","Visuals","Shots","Photography"]}
+{"target_word":"Actor","restricted_words":["Performer","Role","Character","Star","Cinema"]}
+{"target_word":"Genre","restricted_words":["Category","Type","Style","Film","Movie"]}
+{"target_word":"Sequel","restricted_words":["Next","Follow-up","Continuation","Series","Part"]}
+{"target_word":"Blockbuster","restricted_words":["Hit","Movie","Big","Success","Box Office"]}
+{"target_word":"Animation","restricted_words":["Cartoon","Drawing","Film","Computer","Graphics"]}
+{"target_word":"Soundtrack","restricted_words":["Music","Score","Film","Audio","Background"]}
+{"target_word":"Trailer","restricted_words":["Preview","Teaser","Movie","Clip","Promo"]}
+{"target_word":"Cameo","restricted_words":["Appearance","Guest","Star","Brief","Film"]}
+{"target_word":"Oscar","restricted_words":["Award","Academy","Film","Best","Statue"]}
+{"target_word":"Premiere","restricted_words":["First","Debut","Opening","Film","Movie"]}
+{"target_word":"Critique","restricted_words":["Review","Analysis","Movie","Film","Opinion"]}
+{"target_word":"Cliffhanger","restricted_words":["End","Suspense","Thrilling","Movie","Unresolved"]}
+{"target_word":"Bicycle","restricted_words":["Pedal","Wheels","Cycling","Ride","Two"]}
+{"target_word":"Train","restricted_words":["Rails","Locomotive","Station","Tracks","Engine"]}
+{"target_word":"Airplane","restricted_words":["Flight","Wings","Sky","Pilot","Jet"]}
+{"target_word":"Bus","restricted_words":["Public","Transport","Seats","Driver","Route"]}
+{"target_word":"Car","restricted_words":["Automobile","Wheels","Drive","Engine","Fuel"]}
+{"target_word":"Ship","restricted_words":["Ocean","Sail","Boat","Cruise","Cargo"]}
+{"target_word":"Subway","restricted_words":["Underground","Metro","Train","Tunnel","Station"]}
+{"target_word":"Motorcycle","restricted_words":["Bike","Engine","Two","Wheels","Ride"]}
+{"target_word":"Truck","restricted_words":["Cargo","Transport","Heavy","Load","Vehicle"]}
+{"target_word":"Tram","restricted_words":["Rails","Streetcar","City","Tracks","Electric"]}
+{"target_word":"Scooter","restricted_words":["Electric","Two","Wheels","Ride","Motor"]}
+{"target_word":"Helicopter","restricted_words":["Rotor","Blades","Flight","Air","Pilot"]}
+{"target_word":"Taxi","restricted_words":["Cab","Yellow","Fare","Driver","City"]}
+{"target_word":"Ferry","restricted_words":["Boat","Water","Transport","Passengers","Cross"]}
+{"target_word":"Skateboard","restricted_words":["Wheels","Board","Ride","Skate","Tricks"]}
+{"target_word":"Eiffel Tower","restricted_words":["Paris","France","Landmark","Metal","View"]}
+{"target_word":"Great Wall","restricted_words":["China","Long","Ancient","Brick","Defense"]}
+{"target_word":"Taj Mahal","restricted_words":["India","Agra","Marble","Mausoleum","Love"]}
+{"target_word":"Colosseum","restricted_words":["Rome","Italy","Gladiators","Arena","Ancient"]}
+{"target_word":"Machu Picchu","restricted_words":["Peru","Inca","Mountains","Ruins","Lost City"]}
+{"target_word":"Pyramids of Giza","restricted_words":["Egypt","Pharaohs","Sphinx","Desert","Tombs"]}
+{"target_word":"Grand Canyon","restricted_words":["Arizona","USA","National Park","Colorado River","Gorge"]}
+{"target_word":"Niagara Falls","restricted_words":["Waterfall","Canada","USA","Horseshoe","Tourist"]}
+{"target_word":"Mount Everest","restricted_words":["Nepal","Tibet","Highest","Mountain","Climbing"]}
+{"target_word":"Sydney Opera House","restricted_words":["Australia","Harbor","Sails","Architecture","Performance"]}
+{"target_word":"Statue of Liberty","restricted_words":["New York","USA","Freedom","Torch","Island"]}
+{"target_word":"Stonehenge","restricted_words":["England","Stone","Circle","Prehistoric","Monument"]}
+{"target_word":"Acropolis","restricted_words":["Athens","Greece","Parthenon","Ancient","Citadel"]}
+{"target_word":"Louvre Museum","restricted_words":["Paris","France","Art","Mona Lisa","Glass Pyramid"]}
+{"target_word":"Disneyland","restricted_words":["Theme Park","Mickey Mouse","Rides","Magic","Entertainment"]}
+{"target_word":"Einstein","restricted_words":["Physics","Relativity","Genius","Scientist","Theory"]}
+{"target_word":"Shakespeare","restricted_words":["Playwright","Hamlet","Literature","Drama","Poet"]}
+{"target_word":"Cleopatra","restricted_words":["Egypt","Queen","Pharaoh","Antony","Nile"]}
+{"target_word":"Beethoven","restricted_words":["Composer","Music","Symphony","Deaf","Piano"]}
+{"target_word":"Mandela","restricted_words":["South Africa","Apartheid","President","Nobel","Freedom"]}
+{"target_word":"Da Vinci","restricted_words":["Mona Lisa","Inventor","Renaissance","Painter","Genius"]}
+{"target_word":"Gandhi","restricted_words":["India","Non-violence","Independence","Mahatma","Civil Rights"]}
+{"target_word":"Curie","restricted_words":["Radiation","Nobel","Scientist","Polonium","Radium"]}
+{"target_word":"Churchill","restricted_words":["Britain","Prime Minister","WWII","Speeches","Leader"]}
+{"target_word":"Jobs","restricted_words":["Apple","Innovator","Technology","iPhone","Entrepreneur"]}
+{"target_word":"Mozart","restricted_words":["Composer","Music","Prodigy","Classical","Symphony"]}
+{"target_word":"Turing","restricted_words":["Computer","Enigma","Code","AI","Mathematician"]}
+{"target_word":"Earhart","restricted_words":["Aviator","Pilot","Flight","Atlantic","Disappearance"]}
+{"target_word":"Hawking","restricted_words":["Physicist","Black Hole","Cosmology","ALS","Universe"]}
+{"target_word":"Bolt","restricted_words":["Sprinter","Fast","Olympics","Jamaica","100m"]}
+{"target_word":"Atom","restricted_words":["Electron","Proton","Neutron","Nucleus","Particle"]}
+{"target_word":"Gravity","restricted_words":["Force","Attraction","Mass","Weight","Earth"]}
+{"target_word":"Evolution","restricted_words":["Darwin","Species","Natural Selection","Adaptation","Biology"]}
+{"target_word":"Photosynthesis","restricted_words":["Plants","Sunlight","Chlorophyll","Carbon Dioxide","Oxygen"]}
+{"target_word":"DNA","restricted_words":["Genes","Chromosomes","Helix","Genetics","Biology"]}
+{"target_word":"Ecosystem","restricted_words":["Community","Biotic","Abiotic","Environment","Habitat"]}
+{"target_word":"Molecule","restricted_words":["Atoms","Chemistry","Bonds","Compound","Structure"]}
+{"target_word":"Neuron","restricted_words":["Brain","Nerve Cell","Synapse","Signal","Neuroscience"]}
+{"target_word":"Virus","restricted_words":["Infection","Disease","Pathogen","Biology","Replication"]}
+{"target_word":"Galaxy","restricted_words":["Stars","Universe","Milky Way","Astronomy","Space"]}
+{"target_word":"Thermodynamics","restricted_words":["Heat","Energy","Temperature","Physics","Laws"]}
+{"target_word":"Quantum","restricted_words":["Physics","Mechanics","Particles","Wave","Theory"]}
+{"target_word":"Bacteria","restricted_words":["Microorganisms","Infection","Prokaryotes","Antibiotics","Culture"]}
+{"target_word":"Fossil","restricted_words":["Dinosaurs","Paleontology","Bones","Ancient","Remains"]}
+{"target_word":"Metabolism","restricted_words":["Energy","Enzymes","Biochemistry","Cells","Catabolism"]}
+{"target_word":"Democracy","restricted_words":["Government","Voting","Majority","Rights","Freedom"]}
+{"target_word":"Election","restricted_words":["Vote","Candidates","Campaign","Ballot","Politics"]}
+{"target_word":"Senate","restricted_words":["Congress","Legislature","House","Representatives","Government"]}
+{"target_word":"Constitution","restricted_words":["Law","Amendment","Rights","Founding","Document"]}
+{"target_word":"Policy","restricted_words":["Rules","Government","Guidelines","Regulations","Law"]}
+{"target_word":"Candidate","restricted_words":["Election","Nominee","Politics","Campaign","Vote"]}
+{"target_word":"Referendum","restricted_words":["Vote","Public","Question","Ballot","Decision"]}
+{"target_word":"Diplomacy","restricted_words":["Foreign","Relations","Negotiations","Ambassador","Policy"]}
+{"target_word":"Campaign","restricted_words":["Election","Candidate","Vote","Politics","Ads"]}
+{"target_word":"Legislation","restricted_words":["Law","Bill","Congress","Policy","Government"]}
+{"target_word":"Parliament","restricted_words":["Government","Legislature","Debate","Members","House"]}
+{"target_word":"President","restricted_words":["Leader","Country","Election","Executive","Head"]}
+{"target_word":"Governor","restricted_words":["State","Leader","Election","Executive","Politics"]}
+{"target_word":"Socialism","restricted_words":["Economic","System","Government","Ownership","Equality"]}
+{"target_word":"Treaty","restricted_words":["Agreement","Countries","International","Peace","Negotiations"]}
+{"target_word":"Refrigerator","restricted_words":["Cold","Food","Kitchen","Freezer","Electric"]}
+{"target_word":"Microwave","restricted_words":["Oven","Heating","Cooking","Waves","Timer"]}
+{"target_word":"Dishwasher","restricted_words":["Cleaning","Plates","Water","Soap","Kitchen"]}
+{"target_word":"Toaster","restricted_words":["Bread","Heating","Breakfast","Slots","Electric"]}
+{"target_word":"Blender","restricted_words":["Mixing","Smoothie","Liquid","Blades","Electric"]}
+{"target_word":"Oven","restricted_words":["Baking","Cooking","Heat","Kitchen","Electric"]}
+{"target_word":"Coffee Maker","restricted_words":["Brewing","Caffeine","Drink","Filter","Electric"]}
+{"target_word":"Air Fryer","restricted_words":["Cooking","Healthy","Crispy","Oil","Electric"]}
+{"target_word":"Electric Kettle","restricted_words":["Boiling","Water","Tea","Hot","Electric"]}
+{"target_word":"Vacuum Cleaner","restricted_words":["Cleaning","Dust","Floor","Suction","Electric"]}
+{"target_word":"Mixer","restricted_words":["Blending","Baking","Dough","Beaters","Electric"]}
+{"target_word":"Iron","restricted_words":["Clothes","Wrinkles","Heat","Press","Electric"]}
+{"target_word":"Juicer","restricted_words":["Fruit","Extract","Liquid","Pulp","Electric"]}
+{"target_word":"Rice Cooker","restricted_words":["Grains","Cooking","Steam","Kitchen","Electric"]}
+{"target_word":"Slow Cooker","restricted_words":["Crockpot","Stew","Low","Heat","Electric"]}
+{"target_word":"Astronaut","restricted_words":["Space","NASA","Rocket","Mission","Orbit"]}
+{"target_word":"Galaxy","restricted_words":["Stars","Milky Way","Universe","Cosmos","Astronomy"]}
+{"target_word":"Meteor","restricted_words":["Shooting Star","Atmosphere","Rock","Fireball","Space"]}
+{"target_word":"Satellite","restricted_words":["Orbit","Communication","Space","GPS","Telescope"]}
+{"target_word":"Telescope","restricted_words":["Astronomy","Lens","Stars","Observatory","Space"]}
+{"target_word":"Comet","restricted_words":["Tail","Orbit","Ice","Space","Astronomy"]}
+{"target_word":"Gravity","restricted_words":["Force","Attraction","Mass","Weight","Earth"]}
+{"target_word":"Planet","restricted_words":["Earth","Mars","Orbit","Solar System","Astronomy"]}
+{"target_word":"Alien","restricted_words":["Extraterrestrial","UFO","Space","Life","Science Fiction"]}
+{"target_word":"Asteroid","restricted_words":["Belt","Rock","Space","Orbit","Meteor"]}
+{"target_word":"Nebula","restricted_words":["Gas","Dust","Stars","Astronomy","Cloud"]}
+{"target_word":"Orbit","restricted_words":["Revolve","Planet","Space","Gravity","Path"]}
+{"target_word":"Rocket","restricted_words":["Space","Launch","Engine","NASA","Propulsion"]}
+{"target_word":"Solar System","restricted_words":["Planets","Sun","Orbit","Astronomy","Space"]}
+{"target_word":"Universe","restricted_words":["Cosmos","Space","Galaxies","Astronomy","Infinite"]}
+{"target_word":"Shirt","restricted_words":["Collar","Sleeves","Button","Wear","Cotton"]}
+{"target_word":"Pants","restricted_words":["Trousers","Legs","Denim","Waist","Belt"]}
+{"target_word":"Dress","restricted_words":["Skirt","Formal","Party","Sleeveless","Fashion"]}
+{"target_word":"Jacket","restricted_words":["Coat","Zipper","Winter","Leather","Hood"]}
+{"target_word":"Socks","restricted_words":["Feet","Wool","Ankle","Pair","Warm"]}
+{"target_word":"Shoes","restricted_words":["Sneakers","Feet","Laces","Leather","Heels"]}
+{"target_word":"Sweater","restricted_words":["Knit","Warm","Winter","Pullover","Wool"]}
+{"target_word":"Hat","restricted_words":["Cap","Head","Sun","Baseball","Beanie"]}
+{"target_word":"Scarf","restricted_words":["Neck","Warm","Winter","Wool","Wrap"]}
+{"target_word":"Gloves","restricted_words":["Hands","Warm","Winter","Leather","Fingers"]}
+{"target_word":"Belt","restricted_words":["Waist","Leather","Buckle","Trousers","Accessory"]}
+{"target_word":"Tie","restricted_words":["Neck","Suit","Formal","Silk","Knot"]}
+{"target_word":"Shorts","restricted_words":["Summer","Legs","Casual","Waist","Cotton"]}
+{"target_word":"Skirt","restricted_words":["Dress","Knees","Women","Pleated","Fashion"]}
+{"target_word":"Blouse","restricted_words":["Shirt","Women","Sleeves","Button","Silk"]}
+{"target_word": "Algorithm", "restricted_words": ["Steps", "Procedure", "Computing", "Logic", "Process"]}
+{"target_word": "Binary", "restricted_words": ["Two", "0 and 1", "Digits", "Base 2", "Computer Language"]}
+{"target_word": "Compiler", "restricted_words": ["Translate", "Code", "Programming", "Errors", "Executable"]}
+{"target_word": "Debugging", "restricted_words": ["Errors", "Fixing", "Code", "Programming", "Bugs"]}
+{"target_word": "Encryption", "restricted_words": ["Security", "Cipher", "Secret", "Protect", "Data"]}
+{"target_word": "Firewall", "restricted_words": ["Security", "Network", "Protection", "Barrier", "Internet"]}
+{"target_word": "Hardware", "restricted_words": ["Physical", "Computer", "Components", "Devices", "Machines"]}
+{"target_word": "Internet", "restricted_words": ["Web", "Network", "Online", "Global", "WWW"]}
+{"target_word": "JavaScript", "restricted_words": ["Programming", "Web", "Language", "Scripting", "Browser"]}
+{"target_word": "Kernel", "restricted_words": ["Core", "Operating System", "Software", "Control", "Resources"]}
+{"target_word": "Malware", "restricted_words": ["Virus", "Software", "Harmful", "Computer", "Attack"]}
+{"target_word": "Python", "restricted_words": ["Programming", "Language", "Scripting", "Dynamic", "Readable"]}
+{"target_word": "Query", "restricted_words": ["Database", "Search", "Request", "SQL", "Data"]}
+{"target_word": "RAM", "restricted_words": ["Memory", "Computer", "Volatile", "Storage", "Random Access"]}
+{"target_word": "Syntax", "restricted_words": ["Grammar", "Code", "Programming", "Rules", "Structure"]}
+{"target_word":"Messi","restricted_words":["Soccer","Argentina","Barcelona","Goals","Dribbling"]}
+{"target_word":"Serena","restricted_words":["Tennis","Williams","Grand Slam","Serve","Court"]}
+{"target_word":"Jordan","restricted_words":["Basketball","Bulls","NBA","Dunk","Championship"]}
+{"target_word":"Phelps","restricted_words":["Swimming","Olympics","Gold Medals","Butterfly","Records"]}
+{"target_word":"Brady","restricted_words":["Football","Patriots","Quarterback","Super Bowl","Touchdown"]}
+{"target_word":"Bolt","restricted_words":["Sprinter","Jamaica","Olympics","Fast","100m"]}
+{"target_word":"Federer","restricted_words":["Tennis","Swiss","Grand Slam","Backhand","Wimbledon"]}
+{"target_word":"Woods","restricted_words":["Golf","Tiger","Masters","Green Jacket","PGA"]}
+{"target_word":"Ronaldo","restricted_words":["Soccer","Portugal","Manchester United","Goals","Free Kick"]}
+{"target_word":"Nadal","restricted_words":["Tennis","Spanish","Clay Court","Roland Garros","Forehand"]}
+{"target_word":"LeBron","restricted_words":["Basketball","Lakers","NBA","MVP","Dunk"]}
+{"target_word":"Hamm","restricted_words":["Gymnastics","Olympics","Gold Medal","USA","Balance Beam"]}
+{"target_word":"Armstrong","restricted_words":["Cycling","Tour de France","Doping","Livestrong","Yellow Jersey"]}
+{"target_word":"Henderson","restricted_words":["Boxing","UFC","Knockout","Fighter","Champion"]}
+{"target_word":"Sharapova","restricted_words":["Tennis","Russian","Grand Slam","Serve","Wimbledon"]}
+{"target_word": "Microphone", "restricted_words": ["Singer", "Stage", "Voice", "Amplify", "Audio"]}
+{"target_word": "Concert", "restricted_words": ["Live", "Music", "Performance", "Audience", "Stage"]}
+{"target_word": "Vocalist", "restricted_words": ["Singer", "Voice", "Band", "Choir", "Soloist"]}
+{"target_word": "Lyrics", "restricted_words": ["Song", "Words", "Music", "Verse", "Chorus"]}
+{"target_word": "Melody", "restricted_words": ["Tune", "Harmony", "Music", "Song", "Notes"]}
+{"target_word": "Album", "restricted_words": ["Music", "CD", "Record", "Tracks", "Release"]}
+{"target_word": "Harmony", "restricted_words": ["Chords", "Melody", "Music", "Singing", "Tone"]}
+{"target_word": "Choir", "restricted_words": ["Singers", "Group", "Church", "Harmony", "Voices"]}
+{"target_word": "Solo", "restricted_words": ["Alone", "Single", "Performance", "Music", "Singer"]}
+{"target_word": "Pitch", "restricted_words": ["Tone", "Note", "Frequency", "Music", "Singing"]}
+{"target_word": "Karaoke", "restricted_words": ["Singing", "Music", "Lyrics", "Microphone", "Performance"]}
+{"target_word": "Diva", "restricted_words": ["Singer", "Famous", "Star", "Opera", "Ego"]}
+{"target_word": "Falsetto", "restricted_words": ["High", "Voice", "Pitch", "Singing", "Male"]}
+{"target_word": "Rehearsal", "restricted_words": ["Practice", "Performance", "Singing", "Band", "Preparation"]}
+{"target_word": "Encore", "restricted_words": ["Again", "Performance", "Concert", "Audience", "Cheer"]}
+{"target_word": "Globe", "restricted_words": ["Earth", "Sphere", "Map", "World", "Geography"]}
+{"target_word": "Continent", "restricted_words": ["Africa", "Europe", "Landmass", "Asia", "America"]}
+{"target_word": "Ocean", "restricted_words": ["Sea", "Water", "Pacific", "Atlantic", "Marine"]}
+{"target_word": "Equator", "restricted_words": ["Latitude", "0 Degrees", "Middle", "Line", "Earth"]}
+{"target_word": "Hemisphere", "restricted_words": ["Half", "Globe", "North", "South", "Equator"]}
+{"target_word": "Climate", "restricted_words": ["Weather", "Temperature", "Environment", "Global", "Change"]}
+{"target_word": "Country", "restricted_words": ["Nation", "State", "Borders", "Government", "Sovereign"]}
+{"target_word": "Population", "restricted_words": ["People", "Inhabitants", "Census", "Number", "Residents"]}
+{"target_word": "Culture", "restricted_words": ["Tradition", "Society", "Customs", "Beliefs", "Heritage"]}
+{"target_word": "Language", "restricted_words": ["Speak", "Communicate", "Words", "Dialect", "Linguistics"]}
+{"target_word": "Currency", "restricted_words": ["Money", "Cash", "Economy", "Dollar", "Finance"]}
+{"target_word": "Capital", "restricted_words": ["City", "Government", "Center", "Seat", "Metropolis"]}
+{"target_word": "Mountain", "restricted_words": ["Peak", "High", "Hill", "Range", "Elevation"]}
+{"target_word": "Desert", "restricted_words": ["Sand", "Dry", "Arid", "Sahara", "Barren"]}
+{"target_word": "Island", "restricted_words": ["Land", "Water", "Surrounded", "Sea", "Archipelago"]}
