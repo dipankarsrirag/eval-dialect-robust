@@ -1,4 +1,4 @@
-# [Evaluating Dialect Robustness of Large Language Models via Conversation Understanding](https://doi.org/10.48550/arXiv.2405.05688)
+# Evaluating Dialect Robustness of Large Language Models via Conversation Understanding
 **Authors:** Dipankar Srirag and Aditya Joshi
 
 **DOI:** [10.48550/arXiv.2405.05688](https://doi.org/10.48550/arXiv.2405.05688)
