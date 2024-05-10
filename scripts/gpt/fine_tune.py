@@ -3,7 +3,6 @@ from openai import OpenAI
 import pickle as pk
 import signal
 import time
-from tqdm import tqdm
 from dotenv import load_dotenv
 import os
 
@@ -86,10 +85,11 @@ if __name__ == "__main__":
         for choice in [True, False]:
             model = fine_tune(ids, subset, choice)
             if choice:
-                temp["tws"] = model
+                temp["tws"] = [model]
             else:
-                temp["twp"] = model
+                temp["twp"] = [model]
         models[subset] = temp
+        models[subset]["twp"].extend(["gpt-4-turbo-preview", "gpt-3.5-turbo-0125"])
 
-    with open("./models/gpt_3_ids.pk", "wb") as f:
+    with open("./models/ids.pk", "wb") as f:
         pk.dump(models, f)
