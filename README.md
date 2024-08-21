@@ -27,5 +27,5 @@ With an evergrowing number of LLMs reporting superlative performance for English
 
 ## Contact
 - [Dipankar Srirag](mailto:d.srirag@unsw.edu.au); [University of New South Wales](https://dipankarsrirag.github.io)
-- [Nihar Ranjan Sahoo](mailto:niharsahooigit@gmail.com); [Indian Institute of Technology Bombay](https://sahoonihar.github.io)
+- [Nihar Ranjan Sahoo](mailto:nihar@cse.iitb.ac.in); [Indian Institute of Technology Bombay](https://sahoonihar.github.io)
 - [Aditya Joshi](mailto:aditya.joshi@unsw.edu.au); [University of New South Wales](https://www.unsw.edu.au/staff/aditya-joshi)
