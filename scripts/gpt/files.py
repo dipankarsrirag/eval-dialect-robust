@@ -1,132 +1,160 @@
+import json
+import os
+import pickle as pk
+
 import pandas as pd
 from dotenv import load_dotenv
-from tqdm import tqdm
-import os
 from openai import OpenAI
-import pickle as pk
-import json
+from tqdm import tqdm
+
+def get_prompt(transcript, words, task):
+    if task == "twp":
+        return [
+            {
+                "role": "system",
+                "content": "From the conversation, Replace [MASK] with the most relevant word. Generate the word, do not give explanation.",
+            },
+            {"role": "user", "content": f"Conversation: {transcript}"},
+        ]
+    else:
+        return [
+            {
+                "role": "system",
+                "content": "From the conversation, Replace [MASK] with the most relevant word from the list of target words. Generate the word, Do not give explanation.",
+            },
+            {
+                "role": "user",
+                "content": f"Conversation: {transcript}\nTarget Words: {words}",
+            },
+        ]
+
 
 if __name__ == "__main__":
-    
+
     load_dotenv()
 
     # OpenAI API key.
     api_key = os.getenv("OPEN_AI_KEY")
     client = OpenAI(api_key=api_key)
-    
+
     files = dict()
-    
-    sets = ["ind_eng", "us_eng", "ai_trans", "ai_gen"]
+
+    sets = ["ind_eng", "us_eng", "ai_trans", "ai_eng", "multi"]
     for subset in sets:
-        words = set(pd.read_json(f"./m-md3/{subset}.jsonl")["target_word"])
-        train = pd.read_json(f"./m-md3/train/{subset}.jsonl")
-        valid = pd.read_json(f"./m-md3/valid/{subset}.jsonl")
-        
+        train = pd.read_json(f"./data/train/{subset}.jsonl")
+        valid = pd.read_json(f"./data/valid/{subset}.jsonl")
+        test = pd.read_json(f"./data/test/{subset}.jsonl")
+        words = set(
+            list(train["target_word"])
+            + list(valid["target_word"])
+            + list(test["target_word"])
+        )
+
         train_X, train_y = train["transcript"], train["target_word"]
         valid_X, valid_y = valid["transcript"], valid["target_word"]
-        
+
         messages = []
         for input, output in tqdm(zip(train_X, train_y)):
             message = {
                 "messages": [
                     {
                         "role": "system",
-                        "content": 'In the conversation, fill the "[MASK]" with only one relevant noun or verb.',
+                        "content": "From the conversation, Replace [MASK] with the most relevant word. Generate the word, do not give explanation..",
                     },
                     {"role": "user", "content": f'Conversation: "{input}"'},
-                    {"role": "assistant", "content": f"Word: {output}"},
+                    {"role": "assistant", "content": f"{output}"},
                 ]
             }
             messages.append(message)
-        
-        with open(f"./messages/train/{subset}_twp.jsonl", "w") as f:
+
+        with open(f"./messages/gpt/train/{subset}_twp.jsonl", "w") as f:
             for message in messages:
                 f.write(json.dumps(message) + "\n")
-        
-        messages = []    
+
+        messages = []
         for input, output in tqdm(zip(valid_X, valid_y)):
             message = {
                 "messages": [
                     {
                         "role": "system",
-                        "content": 'In the conversation, fill the "[MASK]" with only one relevant noun or verb.',
+                        "content": "From the conversation, Replace [MASK] with the most relevant word. Generate the word, do not give explanation.",
                     },
                     {"role": "user", "content": f'Conversation: "{input}"'},
-                    {"role": "assistant", "content": f"Word: {output}"},
+                    {"role": "assistant", "content": f"{output}"},
                 ]
             }
             messages.append(message)
-        
-        with open(f"./messages/valid/{subset}_twp.jsonl", "w") as f:
+
+        with open(f"./messages/gpt/valid/{subset}_twp.jsonl", "w") as f:
             for message in messages:
                 f.write(json.dumps(message) + "\n")
-        
+
         messages = []
         for input, output in tqdm(zip(train_X, train_y)):
             message = {
                 "messages": [
                     {
                         "role": "system",
-                        "content": f'In the conversation, choose a word from the list below to fill the "[MASK]". List of choices: {words}',
+                        "content": "From the conversation, Replace [MASK] with the most relevant word from the list of target words. Generate the word, Do not give explanation.",
                     },
-                    {"role": "user", "content": f'Conversation: "{input}"'},
-                    {"role": "assistant", "content": f"Word: {output}"},
+                    {
+                        "role": "user",
+                        "content": f"Conversation: {input}\nTarget Words: {words}",
+                    },
+                    {"role": "assistant", "content": f"{output}"},
                 ]
             }
             messages.append(message)
-        
-        with open(f"./messages/train/{subset}_tws.jsonl", "w") as f:
+
+        with open(f"./messages/gpt/train/{subset}_tws.jsonl", "w") as f:
             for message in messages:
                 f.write(json.dumps(message) + "\n")
-        
-        messages = []    
+
+        messages = []
         for input, output in tqdm(zip(valid_X, valid_y)):
             message = {
                 "messages": [
                     {
                         "role": "system",
-                        "content": f'In the conversation, choose a word from the list below to fill the "[MASK]". List of choices: {words}',
+                        "content": "From the conversation, Replace [MASK] with the most relevant word from the list of target words. Generate the word, Do not give explanation.",
                     },
-                    {"role": "user", "content": f'Conversation: "{input}"'},
-                    {"role": "assistant", "content": f"Word: {output}"},
+                    {
+                        "role": "user",
+                        "content": f"Conversation: {input}\nTarget Words: {words}",
+                    },
+                    {"role": "assistant", "content": f"{output}"},
                 ]
             }
             messages.append(message)
-        
-        with open(f"./messages/valid/{subset}_tws.jsonl", "w") as f:
+
+        with open(f"./messages/gpt/valid/{subset}_tws.jsonl", "w") as f:
             for message in messages:
                 f.write(json.dumps(message) + "\n")
-                
 
         twp_train = client.files.create(
-            file=open(f"./messages/train/{subset}_twp.jsonl", "rb"), purpose="fine-tune"
+            file=open(f"./messages/gpt/train/{subset}_twp.jsonl", "rb"),
+            purpose="fine-tune",
         )
 
         twp_valid = client.files.create(
-            file=open(f"./messages/valid/{subset}_twp.jsonl", "rb"), purpose="fine-tune"
+            file=open(f"./messages/gpt/valid/{subset}_twp.jsonl", "rb"),
+            purpose="fine-tune",
         )
 
         tws_train = client.files.create(
-            file=open(f"./messages/train/{subset}_tws.jsonl", "rb"),
+            file=open(f"./messages/gpt/train/{subset}_tws.jsonl", "rb"),
             purpose="fine-tune",
         )
 
         tws_valid = client.files.create(
-            file=open(f"./messages/valid/{subset}_tws.jsonl", "rb"),
+            file=open(f"./messages/gpt/valid/{subset}_tws.jsonl", "rb"),
             purpose="fine-tune",
         )
 
         files[subset] = {
-            "twp": 
-                {
-                    "train": twp_train, "valid": twp_valid
-                    }, 
-            "tws": {
-                "train": tws_train, "valid": tws_valid
-                }
-            }
-        
-    with open("./messages/files.pk", "wb") as f:
+            "twp": {"train": twp_train, "valid": twp_valid},
+            "tws": {"train": tws_train, "valid": tws_valid},
+        }
+
+    with open("./messages/gpt/files.pk", "wb") as f:
         pk.dump(files, f)
-        
-        

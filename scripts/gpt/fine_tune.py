@@ -1,10 +1,12 @@
 import datetime
-from openai import OpenAI
+import os
 import pickle as pk
 import signal
 import time
+
 from dotenv import load_dotenv
-import os
+from openai import OpenAI
+
 
 def fine_tune(ids, subset, choice=False):
 
@@ -16,17 +18,15 @@ def fine_tune(ids, subset, choice=False):
     train = ids["tws" if choice else "twp"]["train"]
     valid = ids["tws" if choice else "twp"]["valid"]
 
-    print(
-        f"Fine-tuning: gpt-3.5-turbo-0125 | {subset} | {'TWS' if choice else 'TWP'}"
-    )
+    print(f"Fine-tuning: gpt-3.5-turbo-0125 | {subset} | {'TWS' if choice else 'TWP'}")
     response = client.fine_tuning.jobs.create(
-        training_file=ids[train],
-        validation_file=ids[valid],
+        training_file=train.id,
+        validation_file=valid.id,
         model="gpt-3.5-turbo-0125",
         hyperparameters={
             "n_epochs": 20,
             "learning_rate_multiplier": 0.3,
-            "batch_size": 3,
+            "batch_size": 8,
         },
         suffix=f"tws-{subset}-0125" if choice else f"twp-{subset}-0125",
     )
@@ -66,16 +66,18 @@ def fine_tune(ids, subset, choice=False):
 
 
 if __name__ == "__main__":
-    
+
     load_dotenv()
     # OpenAI API key.
     api_key = os.getenv("OPEN_AI_KEY")
     client = OpenAI(api_key=api_key)
+    print(client)
 
-    with open("./messages/files.pk", "rb") as f:
+    with open("./messages/gpt/files.pk", "rb") as f:
         files = pk.load(f)
 
-    sets = ["ind_eng", "us_eng", "ai_trans", "ai_gen"]
+    # sets = ["ind_eng", "us_eng", "ai_trans", "ai_eng", "multi"]
+    sets = ["multi"]
 
     models = {}
 
@@ -89,7 +91,7 @@ if __name__ == "__main__":
             else:
                 temp["twp"] = [model]
         models[subset] = temp
-        models[subset]["twp"].extend(["gpt-4-turbo-preview", "gpt-3.5-turbo-0125"])
+        print(models)
 
-    with open("./models/ids.pk", "wb") as f:
+    with open("./models/gpt/multi_ids.pk", "wb") as f:
         pk.dump(models, f)

@@ -39,4 +39,4 @@ if __name__ == "__main__":
 
     ai_trans = ind_eng.copy()
     ai_trans["transcript"] = neutral
-    ai_trans.to_json("./md3/cleaned_data/ai_trans.jsonl", orient="records")
+    ai_trans.to_json("./md3/cleaned_data/en_tr.jsonl", orient="records")
