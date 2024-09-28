@@ -52,7 +52,7 @@ def group_transcript(transcript):
 
 
 if __name__ == "__main__":
-    dialects = ["in", "us"]
+    dialects = ["ng"]
 
     for dial in dialects:
         # For each human generated dialect.
@@ -104,14 +104,11 @@ if __name__ == "__main__":
                 word_win_prompts["clip_identifier"].isin([i])
             ].reset_index(drop=True)[["correct_word/image", "distractors"]]
             target_word = temp.iloc[0, 0]
-            restricted_words = ", ".join(ast.literal_eval(temp.iloc[0, 1])) # type: ignore
+            restricted_words = ", ".join(ast.literal_eval(temp.iloc[0, 1]))  # type: ignore
             data["target_word"].append(target_word)
             data["restricted_words"].append(restricted_words)
             data["clip_id"].append(i)
             data["round"].append(transcript["round"].iloc[0])
 
         data = pd.DataFrame(data)
-        if dial == "in":
-            data.to_json("./md3/cleaned_data/ind_eng.jsonl", orient="records")
-        else:
-            data.to_json("./md3/cleaned_data/us_eng.jsonl", orient="records")
+        data.to_json(f"./md3/cleaned_data/{dial}_eng.jsonl", orient="records")

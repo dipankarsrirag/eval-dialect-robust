@@ -18,13 +18,13 @@ if __name__ == "__main__":
     api_key = os.getenv("OPEN_AI_KEY")
 
     # IndEng conversations from MD3.
-    ind_eng = pd.read_json("./md3/cleaned_data/ind_eng.jsonl")
+    ind_eng = pd.read_json("./md3/cleaned_data/ng_eng.jsonl")
 
     client = OpenAI(api_key=api_key)
     neutral = []
     for transcript in tqdm(list(ind_eng["transcript"])):
         completion = client.chat.completions.create(
-            model="gpt-4-turbo-preview",
+            model="gpt-4-turbo",
             messages=[
                 {  # Prompt used to translate conversations in IndEng to AITrans dialect.
                     "role": "system",
@@ -39,4 +39,4 @@ if __name__ == "__main__":
 
     ai_trans = ind_eng.copy()
     ai_trans["transcript"] = neutral
-    ai_trans.to_json("./md3/cleaned_data/en_tr.jsonl", orient="records")
+    ai_trans.to_json("./md3/cleaned_data/en_tr_ng.jsonl", orient="records")

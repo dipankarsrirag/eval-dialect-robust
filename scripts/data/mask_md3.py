@@ -73,7 +73,7 @@ if __name__ == "__main__":
     tokenizer = AutoTokenizer.from_pretrained('sentence-transformers/all-MiniLM-L6-v2')
     model = AutoModel.from_pretrained('sentence-transformers/all-MiniLM-L6-v2')
 
-    subsets = ["ind_eng", "us_eng", "ai_trans", "ai_gen"]
+    subsets = ["en_tr_ng"]
 
     for subset in subsets:
         data = pd.read_json(f"./md3/cleaned_data/{subset}.jsonl")
